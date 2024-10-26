@@ -90,6 +90,6 @@ async function infoMedia(input, options = {}) {
     file_ext: fileExt,
     file_data: resultData,
   };
-};
+}
 
 module.exports = infoMedia;
