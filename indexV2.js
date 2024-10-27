@@ -159,32 +159,27 @@ async function infoMedia(data, options) {
 
     case "pathToBuffer":
       result = convert.pathToBuffer(data);
-      if (!result)
-        throw new Error("File not found at the given path.");
+      if (!result) throw new Error("File not found at the given path.");
       options.filename = options.filename || path.basename(data);
       break;
     case "pathToBase64":
       result = convert.pathToBase64(data);
-      if (!result)
-        throw new Error("File not found at the given path.");
+      if (!result) throw new Error("File not found at the given path.");
       options.filename = options.filename || path.basename(data);
       break;
     case "pathToBase64Url":
       result = convert.pathToBase64Url(data);
-      if (!result)
-        throw new Error("File not found at the given path.");
+      if (!result) throw new Error("File not found at the given path.");
       options.filename = options.filename || path.basename(data);
       break;
     case "pathToBinary":
       result = convert.pathToBinary(data);
-      if (!result)
-        throw new Error("File not found at the given path.");
+      if (!result) throw new Error("File not found at the given path.");
       options.filename = options.filename || path.basename(data);
       break;
     case "pathToStream":
       result = convert.pathToStream(data);
-      if (!result)
-        throw new Error("File not found at the given path.");
+      if (!result) throw new Error("File not found at the given path.");
       options.filename = options.filename || path.basename(data);
       break;
 
